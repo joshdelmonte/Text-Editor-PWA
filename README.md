@@ -25,7 +25,7 @@ text editor with pwa in mind
 
 -Here is the link to the github io if you'd like to observe as well:
 
-"https://joshdelmonte.github.io/ProfileGeneratorEquipe/"
+"https://github.com/joshdelmonte/Text-Editor-PWA.git"
 
 
 ## Usage
@@ -70,11 +70,11 @@ SOFTWARE.
 ## URLS
 -Deployed URL
 
-"https://joshdelmonte.github.io/ProfileGeneratorEquipe/"
+"https://joshdelmonte.github.io/Text-Editor-PWA/"
 
 -Github URL
 
-"https://github.com/joshdelmonte/ProfileGeneratorEquipe.git"
+"https://github.com/joshdelmonte/Text-Editor-PWA.git"
 
 
 -Website url:
