@@ -26,9 +26,9 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html',
-        filename: 'index.html',
-        chunks: ['main'],
+        template: './index.html',
+        title:'JATE',
+        // chunks: ['main'],
       }),
 
       new InjectManifest({
@@ -43,11 +43,14 @@ module.exports = () => {
         short_name: 'PWAM',
         description: 'PWA for everyone!',
         background_color: '#263cb3',
-        theme_color: '#123pd3',
+        theme_color: '#263cb3',
         start_url: './',
         publicPath: './',
         icons: [
-          {favicon: './src/images/logo.png'},
+          {
+            src: path.resolve('client/src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+          },
         ],
       }),
     ],
