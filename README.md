@@ -80,5 +80,5 @@ SOFTWARE.
 -Website url:
 "http://127.0.0.1:5500/client/dist/index.html"
 
-Heroku URL:
-" "
+Heroku URLS:
+" https://pussilanimousragamuffin.herokuapp.com/ | https://git.heroku.com/pussilanimousragamuffin.git "
