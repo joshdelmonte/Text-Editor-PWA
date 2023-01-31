@@ -7,7 +7,6 @@ const { webpack } = require('webpack');
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 
-
 // TODO: Add CSS loaders and babel to webpack.
 
 
@@ -31,7 +30,7 @@ module.exports = () => {
 
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'sw.js',
+        swDest: 'src-sw.js',
       }),
 
       new WebpackPwaManifest({
@@ -42,8 +41,8 @@ module.exports = () => {
         description: 'PWA for everyone!',
         background_color: '#263cb3',
         theme_color: '#263cb3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
