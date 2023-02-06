@@ -3,7 +3,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 //Where ought I to put this? I'm not sure.
-const { webpack } = require('webpack');
+// const { webpack } = require('webpack');
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 
@@ -62,7 +62,7 @@ module.exports = () => {
         },
         //Babel loader
         {
-          test: /\.js$/,
+          test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader',

@@ -28,7 +28,7 @@ export const getDb = async () => {
   const tx = db.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
   const content = await store.get(1);
-  const result = await request;
+  const result = await content;
   console.log('getDb done');
   return result?.value;
 }
