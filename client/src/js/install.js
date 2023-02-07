@@ -11,18 +11,21 @@ window.addEventListener('beforeinstallprompt', (event) => {
     butInstall.removeAttribute('hidden');
 });
 
+
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async () => {
-    // Hide the app provided install promotion
-    butInstall.setAttribute('hidden', true);
     // Show the install prompt
-    window.deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    const { outcome } = await deferredPrompt.userChoice;
-    // Optionally, send analytics event with outcome of user choice
-    console.log(`User response to the install prompt: ${outcome}`);
+    const promptEvent = window.deferredPrompt;
+    
+    if(!promptEvent) {
+        return;
+    }
+    
+    promptEvent.prompt();
     // We've used the prompt, and can't use it again, throw it away
     window.deferredPrompt = null;
+    // Hide the app provided install promotion
+    butInstall.setAttribute('hidden', true);
 });
 
 // TODO: Add an handler for the `appinstalled` event

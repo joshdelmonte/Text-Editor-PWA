@@ -36,4 +36,7 @@ export const getDb = async () => {
 
 initdb();
 
-
+// git rm -r --cached . or  git rm -r --cached node_modules
+// git commit -m "removing node_modules"
+// git push origin main
+// git push heroku main
